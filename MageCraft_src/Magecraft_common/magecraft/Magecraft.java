@@ -9,8 +9,11 @@ import magecraft.core.helper.LogHelper;
 import magecraft.core.proxy.CommonProxy;
 import magecraft.creativetab.CreativeTabMageCraft;
 import magecraft.item.ModItems;
+import magecraft.item.crafting.CraftingRecipes;
 import magecraft.lib.Reference;
 import magecraft.lib.Strings;
+import magecraft.wgen.BiomeMagicArea;
+import magecraft.wgen.WgenTest;
 import net.minecraft.creativetab.CreativeTabs;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
@@ -22,6 +25,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
+import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
 @Mod(
@@ -75,6 +79,11 @@ public class Magecraft {
         LanguageRegistry.addName(ModItems.ingotMithril, Strings.INGOT_MITHRIL_NAME);
         LanguageRegistry.addName(ModItems.ingotAdamant, Strings.INGOT_ADAMANT_NAME);
         LanguageRegistry.addName(ModItems.woolCloth, Strings.WOOL_CLOTH_NAME);
+        
+        CraftingRecipes.init();
+        
+        //GameRegistry.registerWorldGenerator(new WgenTest()); //Playing around with wgen ~Planetguy
+        //GameRegistry.addBiome(new BiomeMagicArea(123));
         
        
     }
