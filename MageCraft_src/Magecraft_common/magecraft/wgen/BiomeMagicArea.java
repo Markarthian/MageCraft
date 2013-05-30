@@ -8,6 +8,8 @@ import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraft.world.biome.SpawnListEntry;
 
 public class BiomeMagicArea extends BiomeGenBase{
+	
+	public int topBlock,fillerBlock;
 
 	public BiomeMagicArea(int par1) { 
 		super(par1);

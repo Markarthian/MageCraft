@@ -12,9 +12,18 @@ import magecraft.item.ModItems;
 import magecraft.item.crafting.CraftingRecipes;
 import magecraft.lib.Reference;
 import magecraft.lib.Strings;
+import magecraft.test.BlockTelekinesisCatalyst;
+import magecraft.test.ItemLevitator;
+import magecraft.test.LevitationHelper;
 import magecraft.wgen.BiomeMagicArea;
 import magecraft.wgen.WgenTest;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+import cpw.mods.fml.common.FMLCommonHandler;
+import cpw.mods.fml.common.IScheduledTickHandler;
+import cpw.mods.fml.common.ITickHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.Mod.Instance;
@@ -27,6 +36,8 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
+import cpw.mods.fml.common.registry.TickRegistry;
+import cpw.mods.fml.relauncher.Side;
 
 @Mod(
         modid= Reference.MOD_ID,
@@ -82,9 +93,15 @@ public class Magecraft {
         
         CraftingRecipes.init();
         
-        //GameRegistry.registerWorldGenerator(new WgenTest()); //Playing around with wgen ~Planetguy
-        //GameRegistry.addBiome(new BiomeMagicArea(123));
+        GameRegistry.registerWorldGenerator(new WgenTest()); //Playing around with wgen ~Planetguy
+        for(int i=50;i<100;i++){
+        	GameRegistry.addBiome(new BiomeMagicArea(123));
+        }
         
+        TickRegistry.registerTickHandler((ITickHandler) LevitationHelper.inst, Side.SERVER);
+        Item lev=new ItemLevitator(9001);
+        Block tk=new BlockTelekinesisCatalyst(1345, Material.cloth);
+        GameRegistry.registerBlock(tk);
        
     }
     
