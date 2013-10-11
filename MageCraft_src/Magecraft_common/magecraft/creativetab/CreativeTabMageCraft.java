@@ -2,6 +2,8 @@ package magecraft.creativetab;
 
 import magecraft.lib.ItemIds;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+import cpw.mods.fml.common.registry.LanguageRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
@@ -17,6 +19,6 @@ public class CreativeTabMageCraft extends CreativeTabs {
     @SideOnly(Side.CLIENT)
     public int getTabIconItemIndex() {
 
-        return ItemIds.ALCHEMIST_CATALYST_ID;
+        return Item.blazePowder.itemID;
     }
 }
