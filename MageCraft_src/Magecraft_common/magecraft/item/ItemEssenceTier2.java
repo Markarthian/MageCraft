@@ -4,7 +4,7 @@ import magecraft.Magecraft;
 import magecraft.lib.Strings;
 import net.minecraft.item.Item;
 
-public class ItemEssenceTier2 extends Item {
+public class ItemEssenceTier2 extends MageCraftItem {
 
     public ItemEssenceTier2(int id) {
         

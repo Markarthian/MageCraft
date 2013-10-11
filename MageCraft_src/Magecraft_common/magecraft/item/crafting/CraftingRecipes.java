@@ -17,7 +17,7 @@ public class CraftingRecipes {
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.essenceTier1, 1), new Object[] { new ItemStack(ModItems.alchemistCatalyst), new ItemStack(Item.ingotIron), new ItemStack(Item.ingotIron) });
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.essenceTier1, 1), new Object[] { new ItemStack(ModItems.alchemistCatalyst), new ItemStack(Item.redstone), new ItemStack(Item.redstone) });
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.essenceTier1, 1), new Object[] { new ItemStack(ModItems.alchemistCatalyst), new ItemStack(Item.dyePowder, 1, 4), new ItemStack(Item.dyePowder, 1, 4) });
-        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.essenceTier1, 2), new Object[] { new ItemStack(ModItems.alchemistCatalyst), new ItemStack(Item.lightStoneDust) });
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.essenceTier1, 2), new Object[] { new ItemStack(ModItems.alchemistCatalyst), new ItemStack(Item.glowstone) });
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.essenceTier1, 4), new Object[] { new ItemStack(ModItems.alchemistCatalyst), new ItemStack(Item.ingotGold) });
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.essenceTier1, 16), new Object[] { new ItemStack(ModItems.alchemistCatalyst), new ItemStack(Item.diamond) });
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.essenceTier1, 32), new Object[] { new ItemStack(ModItems.alchemistCatalyst), new ItemStack(ModItems.ingotMithril) });
@@ -29,7 +29,7 @@ public class CraftingRecipes {
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.essenceTier1, 1), new Object[] { new ItemStack(ModItems.alchemistCharge), new ItemStack(Item.ingotIron), new ItemStack(Item.ingotIron) });
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.essenceTier1, 1), new Object[] { new ItemStack(ModItems.alchemistCharge), new ItemStack(Item.redstone), new ItemStack(Item.redstone) });
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.essenceTier1, 1), new Object[] { new ItemStack(ModItems.alchemistCharge), new ItemStack(Item.dyePowder, 1, 4), new ItemStack(Item.dyePowder, 1, 4) });
-        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.essenceTier1, 2), new Object[] { new ItemStack(ModItems.alchemistCharge), new ItemStack(Item.lightStoneDust) });
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.essenceTier1, 2), new Object[] { new ItemStack(ModItems.alchemistCharge), new ItemStack(Item.glowstone) });
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.essenceTier1, 4), new Object[] { new ItemStack(ModItems.alchemistCharge), new ItemStack(Item.ingotGold) });
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.essenceTier1, 16), new Object[] { new ItemStack(ModItems.alchemistCharge), new ItemStack(Item.diamond) });
 
@@ -37,7 +37,7 @@ public class CraftingRecipes {
         GameRegistry.addShapelessRecipe(new ItemStack(Item.ingotIron, 3), new Object[] { new ItemStack(ModItems.essenceTier1), new ItemStack(Item.ingotIron) });
         GameRegistry.addShapelessRecipe(new ItemStack(Item.redstone, 3), new Object[] { new ItemStack(ModItems.essenceTier1), new ItemStack(Item.redstone) });
         GameRegistry.addShapelessRecipe(new ItemStack(Item.dyePowder, 3, 4), new Object[] { new ItemStack(ModItems.essenceTier1), new ItemStack(Item.dyePowder, 1, 4) });
-        GameRegistry.addShapelessRecipe(new ItemStack(Item.lightStoneDust, 2), new Object[] { new ItemStack(ModItems.essenceTier1), new ItemStack(ModItems.essenceTier1), new ItemStack(Item.lightStoneDust) });
+        GameRegistry.addShapelessRecipe(new ItemStack(Item.glowstone, 2), new Object[] { new ItemStack(ModItems.essenceTier1), new ItemStack(ModItems.essenceTier1), new ItemStack(Item.glowstone) });
         GameRegistry.addShapelessRecipe(new ItemStack(Item.ingotGold, 2), new Object[] { new ItemStack(ModItems.essenceTier1), new ItemStack(ModItems.essenceTier1), new ItemStack(ModItems.essenceTier1), new ItemStack(ModItems.essenceTier1), new ItemStack(Item.ingotGold) });
         GameRegistry.addShapelessRecipe(new ItemStack(Item.diamond, 2), new Object[] { new ItemStack(ModItems.essenceTier2), new ItemStack(ModItems.essenceTier2), new ItemStack(Item.diamond) });
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.ingotMithril), new Object[] { new ItemStack(ModItems.essenceTier2), new ItemStack(ModItems.essenceTier2), new ItemStack(ModItems.essenceTier2), new ItemStack(ModItems.essenceTier2) });

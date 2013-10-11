@@ -15,8 +15,6 @@ import magecraft.lib.Strings;
 import magecraft.test.BlockTelekinesisCatalyst;
 import magecraft.test.ItemLevitator;
 import magecraft.test.LevitationHelper;
-import magecraft.wgen.BiomeMagicArea;
-import magecraft.wgen.WgenTest;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -42,8 +40,9 @@ import cpw.mods.fml.relauncher.Side;
 @Mod(
         modid= Reference.MOD_ID,
         name= Reference.MOD_NAME,
-        version= Reference.VERSION_NUMBER,
-        dependencies= Reference.DEPENDENCIES)
+        version= Reference.VERSION_NUMBER
+        //,dependencies= Reference.DEPENDENCIES //We don't depend on anything.
+        )
 
 @NetworkMod(
         clientSideRequired=true,
@@ -93,16 +92,6 @@ public class Magecraft {
         
         CraftingRecipes.init();
         
-        GameRegistry.registerWorldGenerator(new WgenTest()); //Playing around with wgen ~Planetguy
-        for(int i=50;i<100;i++){
-        	GameRegistry.addBiome(new BiomeMagicArea(123));
-        }
-        
-        TickRegistry.registerTickHandler((ITickHandler) LevitationHelper.inst, Side.SERVER);
-        Item lev=new ItemLevitator(9001);
-        Block tk=new BlockTelekinesisCatalyst(1345, Material.cloth);
-        GameRegistry.registerBlock(tk);
-       
     }
     
     @PostInit

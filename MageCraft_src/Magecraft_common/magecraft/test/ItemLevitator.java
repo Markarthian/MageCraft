@@ -14,7 +14,6 @@ public class ItemLevitator extends Item {
 		// TODO Auto-generated constructor stub
 	}
 	
-	@Override
     public boolean itemInteractionForEntity(ItemStack par1ItemStack, EntityLiving par2EntityLiving){
 		LevitationHelper.inst.addEntity(par2EntityLiving);
 		//System.out.println(par2EntityLiving);
