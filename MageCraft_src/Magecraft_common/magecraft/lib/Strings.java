@@ -2,6 +2,7 @@ package magecraft.lib;
 
 public class Strings {
     
+	public static final String MOD_NAME="MageCraft";
     public static final String ALCHEMIST_CATALYST_NAME = "AlchemistCatalyst";
     public static final String ALCHEMIST_CHARGE_NAME = "AlchemistCharge";
     public static final String ESSENCE_TIER_1_NAME = "EssenceTier 1";

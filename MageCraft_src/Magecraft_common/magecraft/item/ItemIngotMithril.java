@@ -6,7 +6,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumChatFormatting;
 
-public class ItemIngotMithril extends Item {
+public class ItemIngotMithril extends MageCraftItem {
 
     public ItemIngotMithril(int id) {
        
